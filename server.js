@@ -1,6 +1,16 @@
 const path = require('path');
 const express = require('express');
+
+const cors = require('cors');
 const app = express();
+
+
+
+// Permitir peticiones CORS (por ejemplo, desde Postman o cualquier origen)
+app.use(cors());
+
+// Permitir que Express entienda cuerpos JSON
+app.use(express.json());
 
 // 1️⃣ Servir archivos estáticos desde la carpeta FRONTEND (hermana de BACKEND)
 app.use(

@@ -135,7 +135,7 @@
     "whatwg-url": "^11.0.0"
   },
   "scripts": {
-     "start": "node server.js",
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],
