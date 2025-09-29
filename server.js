@@ -29,6 +29,7 @@ app.get('/', (req, res) => {
 // 3️⃣ Rutas de API para autenticación y citas
 app.use('/api/auth', require('./Routes/auth'));
 app.use('/api/appointments', require('./Routes/Appointment'));
+app.use('/api/admin', require('./Routes/admin'));
 
 // Configurar el puerto en el que correrá el servidor
 const PORT = process.env.PORT || 5000;
